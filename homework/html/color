@@ -3,11 +3,11 @@
 <head>
 <style>
 button {
-  padding: 7px 14px;
-  background-color: LightSeaGreen;
-  border: 1px black soild;
-  color: white;
-  border-radius: 7px;
+  padding:7px 14px;
+  background-color:LightSeaGreen;
+  border:1px black soild;
+  color:white;
+  border-radius:7px;
   }
   
   .a {
