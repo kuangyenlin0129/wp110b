@@ -1,47 +1,51 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
 button {
- width: 15%; 
- height: 10%; 
- color: white;  
- border-radius: 10PX;
+  padding: 7px 14px;
+  background-color: LightSeaGreen;
+  border: 1px black soild;
+  color: white;
+  border-radius: 7px;
+  }
+  
+  .A {
+  background-color:MidnightBlue;
+  }
+  
+  .B {
+  background-color:MediumTurquoise;
+  }
+  
+  .C {
+  background-color:MediumSeaGreen;
+  }
+  
+  .D {
+  background-color:OrangeRed;
+  }
+  
+  .E {
+  background-color:Moccasin;
+  color: black;
+  }
+  
+  .F {
+  background-color:HotPink;
+  }
+  
 }
-
-.one {
-background-color:#DC143C;
-}
-
-.two {
-background-color:Orange;
-}
-
-.three {
-background-color:ForestGreen;
-}
-
-.four {
-background-color:SkyBlue;
-}
-
-.five {
-background-color:DarkBlue;
-}
-
-.six {
-background-color:DarkMagenta;
-}
-
 </style>
 </head>
 <body>
 
-<button class="one" >1</button>
-<button class="two">2</button>
-<button class="three">3</button>
-<button class="four">4</button>
-<button class="five">5</button>
-<button class="six">6</button>
+<button class="A">A</button>
+<button class="B">B</button>
+<button class="C">D</button>
+<button class="D">D</button>
+<button class="E">E</button>
+<button class="F">D</button>
 
 </body>
 </html>
