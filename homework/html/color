@@ -10,28 +10,28 @@ button {
   border-radius: 7px;
   }
   
-  .A {
+  .a {
   background-color:MidnightBlue;
   }
   
-  .B {
+  . b{
   background-color:MediumTurquoise;
   }
   
-  .C {
+  .c {
   background-color:MediumSeaGreen;
   }
   
-  .D {
+  .d {
   background-color:OrangeRed;
   }
   
-  .E {
+  .e {
   background-color:Moccasin;
   color: black;
   }
   
-  .F {
+  .f {
   background-color:HotPink;
   }
   
@@ -40,12 +40,12 @@ button {
 </head>
 <body>
 
-<button class="A">A</button>
-<button class="B">B</button>
-<button class="C">D</button>
-<button class="D">D</button>
-<button class="E">E</button>
-<button class="F">D</button>
+<button class="a">A</button>
+<button class="b">B</button>
+<button class="c">D</button>
+<button class="d">D</button>
+<button class="e">E</button>
+<button class="f">D</button>
 
 </body>
 </html>
