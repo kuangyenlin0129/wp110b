@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML筆記</title>
+    <link rel="icon" type="image/x-icon" href="/notebook.png">
+    <style>
+        .box{
+            
+            margin: auto;
+            text-align: left;
+            background-color: darkgray;
+            
+        }
+        .normal {
+            line-height: normal;
+        }
+        table, th, td {
+            border:1px solid black;
+        }
+</style>
+    </style>
+</head>
+<body style="background-color:#FFFAF2;" >
+    <div class="normal">
+    <h1 style="font-size:300%;text-align:center;">HTML筆記</h1>
+    
+    <h1>元素</h1>
+    <xmp>HTML元素由開始標籤 <標記名> 和結束標籤 </標記名> 所構成。</xmp>
+    <xmp>空元素（如 <br> 元素）沒有結束標籤。</xmp>
+    <xmp><!DOCTYPE html> 開頭聲明表示文檔類型。</xmp>
+    <xmp>文檔以<html>開頭和</html>結尾。</xmp>
+    <pre>文檔的可見部分在&lt;tbody&gt;和&lt;/body&gt;之間。<pre></div>
+    <pre class="box">&lt;DOCTYPE html&lt;
+&lt;html&gt;
+        &lt;head&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;/body&gt;
+&lt;/html&gt;</pre>
+    <hr>
+
+    <h1>標題</h1>
+    <p>標題是由&lt;h1&gt;到&lt;/h6&gt;定義的，&lt;h1&gt;最大而&lt;h6&gt;最小。</p>
+    <pre>範例:</pre>
+    <h1>標題1</h1>
+    <h2>標題2</h2>
+    <h3>標題3</h3>
+    <h4>標題4</h4>
+    <h5>標題5</h5>
+    <h6>標題6</h6>
+    <pre class="box">&lt;h1&lt;標題1&lt;/h1&gt;
+&lt;h2&gt;標題2&lt;/h2&gt;
+..............
+&lt;h6&gt;標題6&lt;/h6&gt;</pre>
+    <hr>
+
+    <h1>段落</h1>
+    <p><xmp>段落使用<p>標籤。</xmp></p>
+    <pre class="box">&lt;p&lt;段落&lt;/p&gt;</pre>
+    <hr>
+
+    <h1>書籤</h1>
+    <xmp>使用id創建書籤，點擊時會移動到書籤位置。</xmp>
+    <pre>範例:<p><a href="#t18">雙引號</a></p></pre>
+    <hr>
+
+    <h1>超鏈結</h1>
+    <xmp>超鏈接使用<a>標籤，使用target可以改變視窗開啟方式。</xmp>
+    <pre>範例:<a href="https://www.google.com.tw/" target="_blank">google</a></pre>
+    <pre class="box">&lt;a href="https://www.google.com.tw/" target="_blank"&gt;google&lt;/a&gt;</pre>
+    <hr>
+
+    <h1>圖像</h1>
+    <xmp>鏈接使用<img>標籤，href屬性指向超連結，src指定圖像路徑，
+alt用在圖片跑不出來時的替代文字，width與height指定高度和寬度。</xmp>
+    <pre>範例:<img src="github.png" alt="github" width="50" height="50"></pre>
+    <pre class="box">&lt;img src="github.png" alt="github" width="50" height="50"&gt;</pre>
+    <hr>
+
+    <h1>網站圖標</h1>
+    <xmp>在網站標題旁加入小圖標。</xmp><img src="/icon.png" alt="網站圖標">
+    <pre class="box"><xmp><link rel="icon" type="image/x-icon" href="/notebook.png"></xmp></pre>
+    <hr>
+
+    <h1>背景顏色</h1>
+    <xmp>background-color屬性定義了HTML元素的背景顏色。</xmp>
+    <pre>補充:顏色值有幾種使用方式:
+
+井字號兩碼代表一個顏色 例: #ff6347
+RGB三原色0~255之間 例: RGB(255, 99, 71)
+hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
+    <pre class="box"><xmp><body style="background-color:#FFFAF2;"></xmp></pre>
+    <hr>
+
+    <h1>文字背景顏色</h1>
+    <xmp>background-color也可以使用在文字上。</xmp>
+    <pre>範例:<p style="background-color:orange;">橘色的文字背景</p></pre>
+    <pre class="box"><xmp><p style="background-color:orange;">橘色的文字背景</p></xmp></pre>
+    <hr>
+
+    <h1>文字邊框顏色</h1>
+    <xmp>border用於文字邊框的顏色。</xmp>
+    <pre>範例:<p style="border:2px solid Violet;">紫色的邊框</p></pre>
+    <pre class="box"><xmp><p style="border:2px solid Violet;">紫色的邊框</p></xmp></pre>
+    <hr>
+
+    <h1>風格屬性</h1>
+    <xmp>style屬性用於向元素添加樣式，例如顏色、字體、大小、對齊等。</xmp>
+    <pre>範例:<p style="color:#7C00D6;">這是紫色.</p><p style="color:#0000D6;">這是深藍.</p><p style="font-family:STKaiti;">第一種字體.</p><p style="font-family:SimSun;">第二種字體.</p><p style="font-size:250%;">大</p><p style="font-size:50%;">小</p><p style="text-align:center;">對齊中間.</p><p style="text-align:right;">對齊右邊.</p></pre>
+    <pre class="box">&lt;p style="color:#7C00D6;"&gt;紫色.&lt;/p&gt;
+&lt;p style="color:#0000D6;"&gt;深藍.&lt;/p&gt;
+&lt;p style="font-family:STKaiti;"&gt;第一種字體.&lt;/p&gt;
+&lt;p style="font-family:SimSun;"&gt;第二種字體.&lt;/p&gt;
+&lt;p style="font-size:250%;"&gt;大&lt;/p&gt;
+&lt;p style="font-size:50%;"&gt;小&lt;/p&gt;
+&lt;p text-align:center;"&gt;對齊中間.&lt;/p&gt;
+&lt;p text-align:right;"&gt;對齊右邊.&lt;/p&gt;</pre>
+    <hr>
+
+    <h1>語言屬性</h1>
+    <xmp>在<html>中使用lang屬性，以聲明網頁的語言和國家，為了幫助搜索。</xmp>
+    <pre class="box">&lt;html lang="en-US"&gt;</pre>
+    <hr>
+
+    <h1>標題屬性</h1>
+    <xmp>當鼠標懸停在元素上時，title屬性的值將顯示。</xmp>
+    <pre>範例:<p title="嗨">將鼠標移到這裡!</p></pre>
+    <div class="box"><xmp><p title="嗨">將鼠標移到這裡!</p></xmp></div>
+    <hr>
+
+    <h1>表格</h1>
+    <xmp><table>開頭</table>結尾，標題欄位用<th>，內容欄位用<td>，而<tr>代表一行。</xmp>
+    <pre>範例:<table>
+        <tr>
+          <th>標題一</th>
+          <th>標題二</th>
+          <th>標題三</th>
+        </tr>
+        <tr>
+          <td>內容一</td>
+          <td>內容二</td>
+          <td>內容三</td>
+        </tr>
+        <tr>
+          <td>內容四</td>
+          <td>內容五</td>
+          <td>內容六</td>
+        </tr>
+      </table></pre>
+    <div class="box"><xmp><table>
+    <tr>
+        <th>標題一</th>
+        <th>標題二</th>
+        <th>標題三</th>
+    </tr>
+    <tr>
+        <td>內容一</td>
+        <td>內容二</td>
+        <td>內容三</td>
+    </tr>
+    <tr>
+        <td>內容四</td>
+        <td>內容五</td>
+        <td>內容六</td>
+    </tr>
+</table></xmp></div>
+    <hr>
+
+    <h1>水平線</h1>
+    <xmp><hr>元素是用於分隔頁面中的水平線，且沒有結束標籤。</xmp>
+    <div class="box"><xmp><hr></xmp></div>
+    <hr>
+
+    <h1>列表</h1>
+    <xmp>無序列表以<ul>標籤開頭。每個列表項都以<li>開頭</xmp>
+    <pre>無序列表範例:<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul></pre>
+<xmp>有序列表以<ol>標籤開頭。每個列表項都以<li>開頭。</xmp>
+    <pre>無序列表範例:<ol>
+<li>列表四</li>
+<li>列表五</li>
+<li>列表六</li>
+</ol></pre>
+    <div class="box"><xmp><ul>
+    <li>列表一</li>
+    <li>列表二</li>
+    <li>列表三</li>
+</ul>
+
+<ol>
+    <li>列表四</li>
+    <li>列表五</li>
+    <li>列表六</li>
+</ol></xmp></div>
+    <hr>
+
+    <h1>換行符</h1>
+    <xmp><br>用於換行而不開始新段落。</xmp>
+    <pre>範例:這是<br>換行</pre>
+    <div class="box"><xmp>這是<br>換行</xmp></div>
+    <hr>
+
+    <h1>去格式化</h1>
+    <xmp><pre>以固定寬度的字體保留了空格和換行符。</xmp>
+    <pre>
+範例:
+        可以保留  空格
+        還有換行
+    </pre>
+    <div class="box"><xmp></pre>
+        可以保留  空格
+        還有換行
+</pre></xmp></div>
+<hr>
+
+    <h1>格式化元素</h1>
+    <ul>
+        <li><xmp><b>- 粗體文字</xmp></li>
+        <li><xmp><strong>- 重要文字</xmp></li>
+        <li><xmp><i>- 斜體文字</xmp></li>
+        <li><xmp><em>- 強調斜體文字</xmp></li>
+        <li><xmp><small>- 較小的文字</xmp></li>
+        <li><xmp><mark>- 螢光筆</xmp></li>
+        <li><xmp><del>- 刪除線文字</xmp></li>
+        <li><xmp><ins>- 底線文字</xmp></li>
+        <li><xmp><sub>- 下標文本</xmp></li>
+        <li><xmp><sup>- 上標文字</xmp></li>
+    </ul>
+    <pre>範例:<b>粗體文字</b><br>
+<strong>重要的文字!</strong><br>
+<i>斜體文字</i><br>
+<em>強調斜體文字</em><br>
+<small>較小的文字</small>
+<p>這是<mark>螢光</mark>筆</p>
+<p>這是<del>刪除線</del> </p>
+<p>這是<ins>底線</ins></p>
+<p>這是<sub>下標</sub></p>
+<p>這是<sup>上標</sup></p></pre>
+<pre class="box"><xmp><b>粗體文字</b>
+<strong>重要的文字!</strong>
+<i>斜體文字</i>
+<em>強調斜體文字</em>
+<small>較小的文字</small>
+<p>這是<mark>螢光</mark>筆</p>
+<p>這是<del>刪除線</del> </p>
+<p>這是<ins>底線</ins></p>
+<p>這是<sub>下標</sub></p>
+<p>這是<sup>上標</sup></p></xmp></pre>
+<hr>
+
+<h1>引用</h1>
+<xmp><blockquote>會以引用的格式顯示文字，而網址寫進起始標籤裡。</xmp>
+<pre>範例:</pre><blockquote cite="https://arielhsu.tw/celebrity-quotes/">面對光明，陰影就在我們身後。－海倫凱勒</blockquote></pre>
+<div class="box"><xmp><blockquote cite="https://arielhsu.tw/celebrity-quotes/">
+面對光明，陰影就在我們身後。－海倫凱勒</blockquote></xmp></div>
+<hr>
+
+<h1 id="t18">雙引號</h1>
+<xmp><q>標籤會於文字中插入雙引號。</xmp>
+<pre>範例:<p>I spent the morning reading Faulkner’s <q>Barn Burning,</q>
+which seemed to be about a pyromaniac.</p></pre>
+<div class="box"><xmp><p>I spent the morning reading Faulkner’s<q>Barn Burning,</q>
+which seemed to be about a pyromaniac.</p></xmp></div>
+<hr>
+
+<h1>註解</h1>
+<xmp><!-- 這是註解不會顯示，也可以使用在程式碼上。 --></xmp>
+<pre>範例:<!-- 這個是註解 -->
+<p>只有這會顯示</p><!-- 蔗部會顯示 --></pre>
+<div class="box"><xmp><!-- 這個是註解 -->
+<p>只有這會顯示</p>
+<!-- 這部會顯示 --></xmp></div>
+<hr>
+
+<h2>參考資料:</h2>
+<pre><a href="https://www.w3schools.com/html/default.asp" target="_blank">w3school(HTML)</a>
+<a href="https://www.google.com.tw/" target="_blank">google</a>
+<a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" target="_blank">GitHub圖片</a>
+<a href="https://arielhsu.tw/celebrity-quotes/" target="_blank">引用海倫凱勒名言</a>
+<a href="https://www.editing.tw/blog/%E8%8B%B1%E6%96%87%E5%BC%95%E8%99%9F%E7%94%A8%E6%B3%95-%E5%96%AE%E5%BC%95%E8%99%9F%E5%92%8C%E9%9B%99%E5%BC%95%E8%99%9F%E7%9A%84%E6%AD%A3%E7%A2%BA%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html" target="_blank">雙引號示範</a>
+<a href="https://www.flaticon.com/free-icon/notebook_2904859" target="_blank">Favicon</a>
+</pre>
+
+</body>
+</html>
