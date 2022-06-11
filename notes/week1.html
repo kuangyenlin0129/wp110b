@@ -12,6 +12,7 @@
             margin: auto;
             text-align: left;
             background-color: darkgray;
+            padding: 7px;
             
         }
         .normal {
@@ -20,19 +21,95 @@
         table, th, td {
             border:1px solid black;
         }
+        .center-content{
+            margin: 0px 325px;
+        }
+        .left-content{
+            float: left;
+            width: 300px;
+            height: 600px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+            overflow-y: scroll;
+            overflow: auto;
+        }
+        .right-content{
+            float: right;
+            width: 300px;
+            background-color: #023459;
+            top:0px;
+            border-radius: 15px;
+            color: #D1DDDB;
+            text-align: center;
+        }
 </style>
     </style>
 </head>
 <body style="background-color:#FFFAF2;" >
-    <div class="normal">
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他筆記:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/week1.html">HTML1</a></li>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/week2.html">HTML2</a></li>
+        </ul>
+        <hr>
+        <h1 style="color: rgb(255, 255, 255);">此筆記內容:</h1>
+        <ul>
+            <li><a href="#t1">元素</a></li>
+            <li><a href="#t2">標題</a></li>
+            <li><a href="#t3">段落</a></li>
+            <li><a href="#t4">書籤</a></li>
+            <li><a href="#t5">超連結</a></li>
+            <li><a href="#t6">圖像</a></li>
+            <li><a href="#t7">網站圖標</a></li>
+            <li><a href="#t8">背景顏色</a></li>
+            <li><a href="#t9">文字背景顏色</a></li>
+            <li><a href="#t10">文字邊框顏色</a></li>
+            <li><a href="#t11">風格屬性</a></li>
+            <li><a href="#t12">語言屬性</a></li>
+            <li><a href="#t13">標題屬性</a></li>
+            <li><a href="#t14">表格</a></li>
+            <li><a href="#t15">水平線</a></li>
+            <li><a href="#t16">列表</a></li>
+            <li><a href="#t17">換行符</a></li>
+            <li><a href="#t18">去格式化</a></li>
+            <li><a href="#t19">格式化元素</a></li>
+            <li><a href="#t20">引用</a></li>
+            <li><a href="#t21">雙引號</a></li>
+            <li><a href="#t22">註解</a></li>
+            <li><a href="#t23">參考資料</a></li>
+        </ul>
+    </div>
+    <div class="right-content">
+        <img src="https://img.onl/nqlEdK" alt="照片" width="200px">
+        <h1>林光彥</h1>
+        <hr>
+        <h2>個人資料</h2>
+        <p>生日:2003年1月29日<br>星座:水瓶座</p>
+        <h2>經歷</h2>
+        <p>正義國小⇨明志國中⇨新北高中⇨金門大學</p>
+        <h2>興趣</h2>
+        <ul style="list-style-type:disc;">
+            <li>看劇</li>
+            <li>欣賞電影</li>
+            <li>聽音樂</li>
+        </ul>
+        <a href="https://github.com/kuangyenlin0129/wp110b" target="_blank"><img src="./github.png" alt="GitHub" width="50px"></a>
+        <a href="https://www.instagram.com/kuang_yen_0129/" target="_blank"><img src="https://img.onl/dg3zNE" alt="IG" width="50px"></a>
+        <a href="mailto:s111010503@student.nqu.edu.tw" target="_blank"><img src="https://img.onl/Kj3wgY" alt="Mail" width="50px"></a>
+        <a href="https://www.facebook.com/kevin.lin.14418101" target="_blank"><img src="https://img.onl/V6oBC5" alt="FB" width="50px"></a>
+    </div>
+    <div class="center-content">
     <h1 style="font-size:300%;text-align:center;">HTML筆記</h1>
     
-    <h1>元素</h1>
+    <h1 id="t1">元素</h1>
     <xmp>HTML元素由開始標籤 <標記名> 和結束標籤 </標記名> 所構成。</xmp>
     <xmp>空元素（如 <br> 元素）沒有結束標籤。</xmp>
     <xmp><!DOCTYPE html> 開頭聲明表示文檔類型。</xmp>
     <xmp>文檔以<html>開頭和</html>結尾。</xmp>
-    <pre>文檔的可見部分在&lt;tbody&gt;和&lt;/body&gt;之間。<pre></div>
+    <pre>文檔的可見部分在&lt;tbody&gt;和&lt;/body&gt;之間。<pre>
     <pre class="box">&lt;DOCTYPE html&lt;
 &lt;html&gt;
         &lt;head&gt;
@@ -42,7 +119,7 @@
 &lt;/html&gt;</pre>
     <hr>
 
-    <h1>標題</h1>
+    <h1  id="t2">標題</h1>
     <p>標題是由&lt;h1&gt;到&lt;/h6&gt;定義的，&lt;h1&gt;最大而&lt;h6&gt;最小。</p>
     <pre>範例:</pre>
     <h1>標題1</h1>
@@ -57,35 +134,35 @@
 &lt;h6&gt;標題6&lt;/h6&gt;</pre>
     <hr>
 
-    <h1>段落</h1>
+    <h1  id="t3">段落</h1>
     <p><xmp>段落使用<p>標籤。</xmp></p>
     <pre class="box">&lt;p&lt;段落&lt;/p&gt;</pre>
     <hr>
 
-    <h1>書籤</h1>
+    <h1  id="t4">書籤</h1>
     <xmp>使用id創建書籤，點擊時會移動到書籤位置。</xmp>
-    <pre>範例:<p><a href="#t18">雙引號</a></p></pre>
+    <pre>範例:<p><a href="#t21">雙引號</a></p></pre>
     <hr>
 
-    <h1>超鏈結</h1>
+    <h1  id="t5">超鏈結</h1>
     <xmp>超鏈接使用<a>標籤，使用target可以改變視窗開啟方式。</xmp>
     <pre>範例:<a href="https://www.google.com.tw/" target="_blank">google</a></pre>
     <pre class="box">&lt;a href="https://www.google.com.tw/" target="_blank"&gt;google&lt;/a&gt;</pre>
     <hr>
 
-    <h1>圖像</h1>
+    <h1  id="t6">圖像</h1>
     <xmp>鏈接使用<img>標籤，href屬性指向超連結，src指定圖像路徑，
 alt用在圖片跑不出來時的替代文字，width與height指定高度和寬度。</xmp>
-    <pre>範例:<img src="https://img.onl/2jf3SJ" alt="github" width="50" height="50"></pre>
+    <pre>範例:<img src="github.png" alt="github" width="50" height="50"></pre>
     <pre class="box">&lt;img src="github.png" alt="github" width="50" height="50"&gt;</pre>
     <hr>
 
-    <h1>網站圖標</h1>
-    <xmp>在網站標題旁加入小圖標。</xmp><img src="https://img.onl/QsQASj" alt="網站圖標">
+    <h1  id="t7">網站圖標</h1>
+    <xmp>在網站標題旁加入小圖標。</xmp><img src="/icon.png" alt="網站圖標">
     <pre class="box"><xmp><link rel="icon" type="image/x-icon" href="/notebook.png"></xmp></pre>
     <hr>
 
-    <h1>背景顏色</h1>
+    <h1  id="t8">背景顏色</h1>
     <xmp>background-color屬性定義了HTML元素的背景顏色。</xmp>
     <pre>補充:顏色值有幾種使用方式:
 
@@ -95,19 +172,19 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
     <pre class="box"><xmp><body style="background-color:#FFFAF2;"></xmp></pre>
     <hr>
 
-    <h1>文字背景顏色</h1>
+    <h1  id="t9">文字背景顏色</h1>
     <xmp>background-color也可以使用在文字上。</xmp>
     <pre>範例:<p style="background-color:orange;">橘色的文字背景</p></pre>
     <pre class="box"><xmp><p style="background-color:orange;">橘色的文字背景</p></xmp></pre>
     <hr>
 
-    <h1>文字邊框顏色</h1>
+    <h1  id="t10">文字邊框顏色</h1>
     <xmp>border用於文字邊框的顏色。</xmp>
     <pre>範例:<p style="border:2px solid Violet;">紫色的邊框</p></pre>
     <pre class="box"><xmp><p style="border:2px solid Violet;">紫色的邊框</p></xmp></pre>
     <hr>
 
-    <h1>風格屬性</h1>
+    <h1  id="t11">風格屬性</h1>
     <xmp>style屬性用於向元素添加樣式，例如顏色、字體、大小、對齊等。</xmp>
     <pre>範例:<p style="color:#7C00D6;">這是紫色.</p><p style="color:#0000D6;">這是深藍.</p><p style="font-family:STKaiti;">第一種字體.</p><p style="font-family:SimSun;">第二種字體.</p><p style="font-size:250%;">大</p><p style="font-size:50%;">小</p><p style="text-align:center;">對齊中間.</p><p style="text-align:right;">對齊右邊.</p></pre>
     <pre class="box">&lt;p style="color:#7C00D6;"&gt;紫色.&lt;/p&gt;
@@ -120,18 +197,18 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
 &lt;p text-align:right;"&gt;對齊右邊.&lt;/p&gt;</pre>
     <hr>
 
-    <h1>語言屬性</h1>
+    <h1  id="t12">語言屬性</h1>
     <xmp>在<html>中使用lang屬性，以聲明網頁的語言和國家，為了幫助搜索。</xmp>
     <pre class="box">&lt;html lang="en-US"&gt;</pre>
     <hr>
 
-    <h1>標題屬性</h1>
+    <h1  id="t13">標題屬性</h1>
     <xmp>當鼠標懸停在元素上時，title屬性的值將顯示。</xmp>
     <pre>範例:<p title="嗨">將鼠標移到這裡!</p></pre>
     <div class="box"><xmp><p title="嗨">將鼠標移到這裡!</p></xmp></div>
     <hr>
 
-    <h1>表格</h1>
+    <h1  id="t14">表格</h1>
     <xmp><table>開頭</table>結尾，標題欄位用<th>，內容欄位用<td>，而<tr>代表一行。</xmp>
     <pre>範例:<table>
         <tr>
@@ -169,12 +246,12 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
 </table></xmp></div>
     <hr>
 
-    <h1>水平線</h1>
+    <h1  id="t15">水平線</h1>
     <xmp><hr>元素是用於分隔頁面中的水平線，且沒有結束標籤。</xmp>
     <div class="box"><xmp><hr></xmp></div>
     <hr>
 
-    <h1>列表</h1>
+    <h1 id="t16">列表</h1>
     <xmp>無序列表以<ul>標籤開頭。每個列表項都以<li>開頭</xmp>
     <pre>無序列表範例:<ul>
 <li>列表一</li>
@@ -200,13 +277,13 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
 </ol></xmp></div>
     <hr>
 
-    <h1>換行符</h1>
+    <h1 id="t17">換行符</h1>
     <xmp><br>用於換行而不開始新段落。</xmp>
     <pre>範例:這是<br>換行</pre>
     <div class="box"><xmp>這是<br>換行</xmp></div>
     <hr>
 
-    <h1>去格式化</h1>
+    <h1 id="t18">去格式化</h1>
     <xmp><pre>以固定寬度的字體保留了空格和換行符。</xmp>
     <pre>
 範例:
@@ -219,7 +296,7 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
 </pre></xmp></div>
 <hr>
 
-    <h1>格式化元素</h1>
+    <h1 id="t19">格式化元素</h1>
     <ul>
         <li><xmp><b>- 粗體文字</xmp></li>
         <li><xmp><strong>- 重要文字</xmp></li>
@@ -254,14 +331,14 @@ hsl色度彩度 例: hsl(9, 100%, 64%)</pre>
 <p>這是<sup>上標</sup></p></xmp></pre>
 <hr>
 
-<h1>引用</h1>
+<h1 id="t20">引用</h1>
 <xmp><blockquote>會以引用的格式顯示文字，而網址寫進起始標籤裡。</xmp>
 <pre>範例:</pre><blockquote cite="https://arielhsu.tw/celebrity-quotes/">面對光明，陰影就在我們身後。－海倫凱勒</blockquote></pre>
 <div class="box"><xmp><blockquote cite="https://arielhsu.tw/celebrity-quotes/">
 面對光明，陰影就在我們身後。－海倫凱勒</blockquote></xmp></div>
 <hr>
 
-<h1 id="t18">雙引號</h1>
+<h1 id="t21">雙引號</h1>
 <xmp><q>標籤會於文字中插入雙引號。</xmp>
 <pre>範例:<p>I spent the morning reading Faulkner’s <q>Barn Burning,</q>
 which seemed to be about a pyromaniac.</p></pre>
@@ -269,7 +346,7 @@ which seemed to be about a pyromaniac.</p></pre>
 which seemed to be about a pyromaniac.</p></xmp></div>
 <hr>
 
-<h1>註解</h1>
+<h1  id="t22">註解</h1>
 <xmp><!-- 這是註解不會顯示，也可以使用在程式碼上。 --></xmp>
 <pre>範例:<!-- 這個是註解 -->
 <p>只有這會顯示</p><!-- 蔗部會顯示 --></pre>
@@ -278,14 +355,15 @@ which seemed to be about a pyromaniac.</p></xmp></div>
 <!-- 這部會顯示 --></xmp></div>
 <hr>
 
-<h2>參考資料:</h2>
-<pre><a href="https://www.w3schools.com/html/default.asp" target="_blank">w3school(HTML)</a>
+<h1  id="t23">參考資料:</h1>
+<pre><a href="https://www.facebook.com/groups/ccccourse/" target="_blank">陳鍾誠的課程社團</a>
+<a href="https://www.w3schools.com/html/default.asp" target="_blank">w3school(HTML)</a>
 <a href="https://www.google.com.tw/" target="_blank">google</a>
 <a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" target="_blank">GitHub圖片</a>
 <a href="https://arielhsu.tw/celebrity-quotes/" target="_blank">引用海倫凱勒名言</a>
 <a href="https://www.editing.tw/blog/%E8%8B%B1%E6%96%87%E5%BC%95%E8%99%9F%E7%94%A8%E6%B3%95-%E5%96%AE%E5%BC%95%E8%99%9F%E5%92%8C%E9%9B%99%E5%BC%95%E8%99%9F%E7%9A%84%E6%AD%A3%E7%A2%BA%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html" target="_blank">雙引號示範</a>
 <a href="https://www.flaticon.com/free-icon/notebook_2904859" target="_blank">Favicon</a>
-</pre>
+</pre></div>
 
 </body>
 </html>
