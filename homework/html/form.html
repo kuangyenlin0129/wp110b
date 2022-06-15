@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../notes/bar.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>sign up</title>
 
     <style>
+        .left-content{
+            float: left;
+            width: 150px;
+            height: 550px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+            overflow-y: scroll;
+            overflow: auto;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .top-bar{
+            width: 100%;
+            height: 90px;
+        }.center-content{
+            margin: 0px 30px;
+        }
         .box{
         margin: 80px 350px;
         padding: 7px;
@@ -31,10 +53,59 @@
         a{
             text-decoration: none;
         }
+
     </style>
 </head>
 <body style="background-color:#FFFAF2;">
-
+    <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" >
+                <input type="radio" name="tab" id="comment" checked>
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他作品:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/homework/html/color.html">Button</a></li>
+        </ul>
+    </div>
+    <div class="center-content">
     <form class = "box">
         <h1>Sign Up</h1>
         <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -55,7 +126,7 @@
         <input type="date" id="birthday" name="birthday"><br><br>
         <input type="checkbox" id="agree" name="agree" value="agree">
         <label for="agree">I agree all statements in </label>
-        <a href="https://kuangyenlin0129.github.io/wp110b/homework/html/form.html">Terms of service</a></div><br>
+        <a href="">Terms of service</a></div><br>
         <input type="submit" value="提交">
     </form>
     
