@@ -122,7 +122,15 @@
             <li><a href="#t20">引用</a></li>
             <li><a href="#t21">雙引號</a></li>
             <li><a href="#t22">註解</a></li>
-            <li><a href="#t23">參考資料</a></li>
+             <li><a href="#t23">Responsive</a></li>
+            <li><a href="#t24">Computer Code</a></li>
+            <li><a href="#t25">特殊字元</a></li>
+            <li><a href="#t26">表單</a></li>
+            <li><a href="#t27">下拉表</a></li>
+            <li><a href="#t28">輸入下拉表</a></li>
+            <li><a href="#t29">文字框</a></li>
+            <li><a href="#t30">按鈕</a></li>
+            <li><a href="#t31">參考資料</a></li>
         </ul>
     </div>
     <div class="center-content">
@@ -379,7 +387,199 @@ which seemed to be about a pyromaniac.</p></xmp></div>
 <!-- 這部會顯示 --></xmp></div>
 <hr>
 
-<h1  id="t23">參考資料:</h1>
+<h1 id="t23">Responsive</h1>
+    <xmp>可以根據裝置的螢幕寬度來改變樣式。</xmp>
+    <xmp class="box"><meta name="viewport" content="width=device-width, initial-scale=1.0"></xmp></div>
+    <hr>
+
+    <h1 id="t24">Computer Code</h1>
+    <xmp>如果要寫一些程式的時候可以使用<code>標籤，但不保留換行因此可以加<pre>。</xmp>
+<pre>舉例:
+    <code>
+        x = 10;
+        y = 9;
+        z = x + y;</code></pre>
+    <xmp class="box"><pre>
+    <code>
+        x = 10;
+        y = 9;
+        z = x + y;
+    </code>
+</pre></xmp>
+    <hr>
+
+    <h1 id="t25">特殊字元</h1>
+    <xmp>有些符號會容易造成瀏覽器搞混，因此可以使用替代字符。</xmp>
+    <xmp class="box">< = &lt;
+> = &gt;
+€ = &euro;
+© = &copy;</xmp>
+    <hr>
+    
+    <h1 id="t26">表單</h1>
+    <xmp>使用<form>標籤創建表單，<input>用來輸入，type決定方式，
+<fieldset>在表單外生成框，<legend>為該表單名稱。</xmp>
+    <ul>
+<li>type="text" - 文字</li>
+<li>type="password" - 只會顯示點</li>
+<li>type="email" - 只能輸入郵件格式</li>
+<li>type="number" - 只能輸入數字</li>
+<li>type="date" - 可以選日期</li>
+<li>type="color" - 可以選顏色</li>
+<li>type="radio" - 單選</li>
+<li>type="checkbox" - 複選</li>
+<li>type="submit" - 送出按鈕</li>
+<li>type="button" - 按鈕</li>
+<li>type="reset" - 使整個表單重設</li>
+<br>
+<li>maxlength - 可以限制最大長度</li>
+<li>step - 可以調整數字的間距</li>
+<li>pattern="[只能輸入什麼]{只能輸入幾個}" - 規定格式</li>
+<li>placeholder - 顯示提示字樣</li>
+<li>required - 這欄一定要輸入</li>
+<li>autofocus - 設置一開始游標的位置</li>
+<li>autocomplete - 根據之前的輸入紀錄自動完成</li>
+    </ul>
+    <pre>舉例:</pre>
+    <form>
+        <label for="fname">name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="0" max="100" step="10" value="0"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="color">Select a color:</label>
+        <input type="color" id="color" name="color" value="#ff0000"><br><br>
+        <fieldset>
+            <legend>Choose your language:</legend>
+        <input type="radio" id="chinese" name="language" value="chinese">
+        <label for="chinese">Chinese</label><br>
+        <input type="radio" id="english" name="language" value="english">
+        <label for="engilsh">Engilsh</label><br>
+        <input type="radio" id="japanese" name="language" value="japanese">
+        <label for="japanese">Japanese</label>
+        </fieldset>
+        <p>Choose some fruits you like:</p>
+        <input type="checkbox" id="fruits1" name="fruits1" value="apple">
+        <label for="fruits1"> Apple</label><br>
+        <input type="checkbox" id="fruits2" name="fruits2" value="banana">
+        <label for="fruits2"> Banana</label><br>
+        <input type="checkbox" id="fruits3" name="fruits3" value="cherry">
+        <label for="fruits3"> Cherry</label><br><br>
+        <input type="submit" value="提交">
+        <input type="reset">
+    </form>
+    <xmp class="box"><form>
+    <label for="fname">name:</label><br>
+    <input type="text" id="fname" name="fname">
+    
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email">
+
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number" min="0" max="100" step="10" value="0">
+    
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+    
+    <label for="color">Select a color:</label>
+    <input type="color" id="color" name="color" value="#ff0000"><br>
+    
+    <fieldset>
+        <legend>Choose your language:</legend>
+        <input type="radio" id="chinese" name="language" value="chinese">
+        <label for="chinese">Chinese</label><br>
+        <input type="radio" id="english" name="language" value="english">
+        <label for="engilsh">Engilsh</label><br>
+        <input type="radio" id="japanese" name="language" value="japanese">
+        <label for="japanese">Japanese</label>
+    </fieldset>
+        
+    <p>Choose some fruits you like:</p>
+    <input type="checkbox" id="fruits1" name="fruits1" value="apple">
+    <label for="fruits1"> Apple</label><br>
+    <input type="checkbox" id="fruits2" name="fruits2" value="banana">
+    <label for="fruits2"> Banana</label><br>
+    <input type="checkbox" id="fruits3" name="fruits3" value="cherry">
+    <label for="fruits3"> Cherry</label><br>
+    
+    <input type="submit" value="提交">
+    <input type="reset">
+</form></xmp>
+    <hr>
+
+    <h1  id="t27">下拉表</h1>
+    <xmp><select>可以建構一個下拉列表，<option>是一個選項，使用multiple可以多選。</xmp>
+    <pre>舉例:</pre>
+    <label for="animals">Choose a animal:</label>
+<select id="animals" name="animals">
+    <option value="monkey">Monkey</option>
+    <option value="rabbit">Rabbit</option>
+    <option value="dolphin">Dolphin</option>
+</select><br>
+    <xmp class="box"><label for="animals">Choose a animal:</label>
+<select id="animals" name="animals">
+        <option value="monkey">Monkey</option>
+        <option value="rabbit">Rabbit</option>
+        <option value="dolphin">Dolphin</option>
+</select></xmp>
+    <hr>
+
+    <h1 id="t28">輸入下拉表</h1>
+    <xmp><datalist>既可以選取也可以輸入。</xmp>
+    <pre>舉例:
+
+Which country do you live in?</pre><form>
+        <input list="country" name="country">
+        <datalist id="country">
+          <option value="Taiwan">
+          <option value="US">
+          <option value="Japan">
+          <option value="South Korea">
+          <option value="Australia">
+        </datalist>
+        <input type="submit">
+      </form>
+    <xmp class="box"><form>
+    <input list="country" name="country">
+    <datalist id="country">
+        <option value="Taiwan">
+        <option value="US">
+        <option value="Japan">
+        <option value="South Korea">
+        <option value="Australia">
+    </datalist>
+    <input type="submit">
+</form></xmp>
+    <hr>
+
+    <h1 id="t29">文字框</h1>
+    <xmp><textarea>建構一個可以多行輸入的文字框，rows決定列，cols決定行。</xmp>
+    <pre>舉例:</pre>
+    <textarea name="message" rows="10" cols="30">
+這是大一點的文字框.
+        </textarea>
+    <xmp class="box"><textarea name="message" rows="10" cols="30">
+這是大一點的文字框.
+</textarea></xmp>
+    <hr>
+
+    <h1 id="t30">按鈕</h1>
+    <xmp><button>建立一個可以點擊的按鈕。</xmp>
+    <pre>舉例:</pre>
+    <button onclick="alert('嗨你好!')">點擊!</button>
+    <br>
+    <xmp class="box"><button onclick="alert('嗨你好!')">點擊!</button></xmp>
+    <hr>
+
+<h1  id="t31">參考資料:</h1>
 <pre><a href="https://www.facebook.com/groups/ccccourse/" target="_blank">陳鍾誠的課程社團</a>
 <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3school(HTML)</a>
 <a href="https://www.google.com.tw/" target="_blank">google</a>
