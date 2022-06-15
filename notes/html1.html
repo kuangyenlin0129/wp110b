@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML筆記</title>
+    <link rel="stylesheet" href="../peweb/bar.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://img.onl/jwWTwe">
     <style>
         .box{
@@ -27,7 +29,7 @@
         .left-content{
             float: left;
             width: 300px;
-            height: 600px;
+            height: 550px;
             background-color: #3c422846;
             position: sticky;
             top:0px;
@@ -35,19 +37,59 @@
             overflow-y: scroll;
             overflow: auto;
         }
-        .right-content{
-            float: right;
-            width: 300px;
-            background-color: #023459;
-            top:0px;
-            border-radius: 15px;
-            color: #D1DDDB;
+        .text-center{
             text-align: center;
+        }
+        .top-bar{
+            width: 100%;
+            height: 90px;
         }
 </style>
     </style>
 </head>
 <body style="background-color:#FFFAF2;" >
+    <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" checked>
+                <input type="radio" name="tab" id="comment" >
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
     <div class="left-content">
         <h1 style="color: rgb(255, 255, 255);">其他筆記:</h1>
         <ul>
@@ -81,25 +123,6 @@
             <li><a href="#t22">註解</a></li>
             <li><a href="#t23">參考資料</a></li>
         </ul>
-    </div>
-    <div class="right-content">
-        <img src="https://img.onl/nqlEdK" alt="照片" width="200px">
-        <h1>林光彥</h1>
-        <hr>
-        <h2>個人資料</h2>
-        <p>生日:2003年1月29日<br>星座:水瓶座</p>
-        <h2>經歷</h2>
-        <p>正義國小⇨明志國中⇨新北高中⇨金門大學</p>
-        <h2>興趣</h2>
-        <ul style="list-style-type:disc;">
-            <li>看劇</li>
-            <li>欣賞電影</li>
-            <li>聽音樂</li>
-        </ul>
-        <a href="https://github.com/kuangyenlin0129/wp110b" target="_blank"><img src="./github.png" alt="GitHub" width="50px"></a>
-        <a href="https://www.instagram.com/kuang_yen_0129/" target="_blank"><img src="https://img.onl/dg3zNE" alt="IG" width="50px"></a>
-        <a href="mailto:s111010503@student.nqu.edu.tw" target="_blank"><img src="https://img.onl/Kj3wgY" alt="Mail" width="50px"></a>
-        <a href="https://www.facebook.com/kevin.lin.14418101" target="_blank"><img src="https://img.onl/V6oBC5" alt="FB" width="50px"></a>
     </div>
     <div class="center-content">
     <h1 style="font-size:300%;text-align:center;">HTML筆記</h1>
