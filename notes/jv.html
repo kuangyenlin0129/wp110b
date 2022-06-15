@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript筆記</title>
+    <link rel="stylesheet" href="../notes/bar.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.onl/jwWTwe">
+    <style>
+        .center-content{
+            background-color:#D1DDDB;
+            margin: 0px 325px;
+        }
+        .left-content{
+            float: left;
+            width: 300px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+        }
+        .right-content{
+            float: right;
+            width: 300px;
+            background-color: #023459;
+            top:0px;
+            border-radius: 15px;
+            color: #D1DDDB;
+            text-align: center;
+        }
+        .box{
+            margin: auto;
+            padding: 7px;
+            background-color: #1d6a9679;
+            color: white;
+        }
+        .top-bar{
+            width: 100%;
+            height: 90px;
+        }
+        .center-content{
+            margin: 0px 325px;
+        }
+    </style>
+</head>
+<body style="background-color: #D1DDDB;">
+    <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" checked>
+                <input type="radio" name="tab" id="comment" >
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他筆記:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/week1.html">HTML1</a></li>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/week2.html">HTML2</a></li>
+        </ul>
+        <hr>
+        <h1 style="color: rgb(255, 255, 255);">此筆記內容:</h1>
+        <ul>
+            <li><a href="#t1">列印字串</a></li>
+            <li><a href="#t2">宣告變數</a></li>
+            <li><a href="#t3">for迴圈</a></li>
+            <li><a href="#t4">字串相加</a></li>
+            <li><a href="#t5">取字串長度</a></li>
+            <li><a href="#t6">取字串</a></li>
+            <li><a href="#t7">字串大小寫轉換</a></li>
+            <li><a href="#t8">字串相接</a></li>
+            <li><a href="#t9">取字元</a></li>
+            <li><a href="#t10">切出字串</a></li>
+            <li><a href="#t11">推入陣列</a></li>
+            <li><a href="#t12">陣列相接</a></li>
+            <li><a href="#t13">陣列轉成字串</a></li>
+            <li><a href="#t14">取出陣列元素</a></li>
+            <li><a href="#t15">參考資料</a></li>
+        </ul>
+    </div>
+    <div class="right-content">
+        
+    </div>
+    <div class="center-content">
+    <h1 style="font-size:300%;text-align:center;">JavaScript筆記</h1>
+
+    <h1 id="t1">列印字串</h1>
+    <pre>列印字串使用console.log()，像是c語言中的printf</pre>
+    <pre>範例:
+
+Hi
+
+hello world</pre>
+    <xmp class="box">console.log("Hi");
+a = "hollo";
+b = "world";
+console.log(a,b);</xmp>
+    <hr>
+
+    <h1 id="t2">宣告變數</h1>
+    <pre>宣告變數var (什麼型態都可以宣告），而加var是區域變數，不加是全域變數。</pre>
+    <xmp class="box">var a = 3;
+var b = hi;</xmp>
+    <hr>
+
+    <h1 id="t3">for迴圈</h1>
+    <pre>for迴圈裡的continue，會跳過這一輪繼續執行下一輪迴圈;而break會直接跳出迴圈。</pre>
+    <pre>範例:
+
+1
+3
+4</pre>
+    <xmp class="box">for (i=1;i<=6;i++) {
+if (i == 2) continue;
+if (i == 5) break;
+console.log(i);
+}</xmp>
+    <hr>
+
+    <h1 id="t4">字串相加</h1>
+    <pre>for迴圈裡的continue，會跳過這一輪繼續執行下一輪迴圈;而break會直接跳出迴圈。</pre>
+    <pre>範例:
+
+helloworld
+</pre>
+    <xmp class="box">"hello"+"world"</xmp>
+    <hr>
+
+    <h1 id="t5">取字串長度</h1>
+    <pre>字串.length</pre>
+    <pre>範例:
+
+10
+</pre>
+    <xmp class="box">a = "helloworld";
+a.length;</xmp>
+    <hr>
+    
+    <h1 id="t6">取字串</h1>
+    <pre>字串名稱.substr(起始點，長度)從起始點開始取出多少長度的字串。
+字串名稱.substring(起始點，終止點)取出從起始點開始到終止點之前的字串。(不包含終止點)。</pre>
+    <pre>範例:
+
+hello
+world</pre>
+    <xmp class="box">a = "helloworld";
+a.substr(0,5);
+a.substring(5,10);</xmp>
+    <hr>
+
+    <h1 id="t7">字串大小寫轉換</h1>
+    <pre>轉小寫:
+字串.toLowerCase();
+轉大寫:
+字串.toUpperCase();</pre>
+    <pre>範例:
+
+hello
+HELLO</pre>
+    <xmp class="box">a = "hElLo";
+a.toLowerCase();
+a.toUpperCase();</xmp>
+    <hr>
+
+    <h1 id="t8">字串相接</h1>
+    <pre>第一個字串.concat(第二個字串)</pre>
+    <pre>範例:
+
+helloworld</pre>
+    <xmp class="box">a = "hello";
+b = "world";
+a.concat(b);</xmp>
+    <hr>
+
+    <h1 id="t9">取字元</h1>
+    <pre>字串.charAt(N)取出第N個字元</pre>
+    <pre>範例:
+
+l</pre>
+    <xmp class="box">a = "hello";
+a.charAt(3);</xmp>
+    <hr>
+
+    <h1 id="t10">切出字串</h1>
+    <pre>字串.slice(N)切出起始點之後的內容</pre>
+    <pre>範例:
+
+ello</pre>
+    <xmp class="box">a = "hello";
+a.slice(1);</xmp>
+    <hr>
+
+    <h1 id="t11">推入陣列</h1>
+    <pre>陣列.push(N)把N推入陣列尾端
+
+範例：
+        
+ a=［0，1，2，3]</pre>
+    <xmp class="box">a=［0，1，2]
+a.push(3);</xmp>
+    <hr>
+
+    <h1 id="t12">陣列相接</h1>
+    <pre>陣列1.concat(陣列2)將兩個陣列相接，不會改變陣列1的內容</pre>
+    <pre>範例:
+
+[ 1, 2, 3, 4, 5, 6]</pre>
+    <xmp class="box">a = [1,2,3];
+a.concat([4,5,6]);</xmp>
+    <hr>
+
+    <h1 id="t13">陣列轉成字串</h1>
+    <pre>陣列.join（）把一個陣列接成一個字串</pre>
+    <pre>範例:
+
+"1,2,3"</pre>
+    <xmp class="box">a = [1,2,3];
+a.join（）;</xmp>
+    <hr>
+
+    <h1 id="t14">取出陣列元素</h1>
+    <pre>陣列.shift（）把陣列最前面的元素取出來</pre>
+    <pre>範例:
+
+1
+[ 2, 3 ]</pre>
+    <xmp class="box">a = [1,2,3];
+a.shift（）;//取出1
+console.log(a);//列印a陣列</xmp>
+    <hr>
+
+    <h1  id="t15">參考資料:</h1>
+<pre><a href="https://kinmen6.com/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/JavaScript/%E5%9F%BA%E7%A4%8E/" target="_blank">陳鍾誠教授:JavaScript 基礎</a>
+<a href="https://www.facebook.com/groups/ccccourse/" target="_blank">陳鍾誠的課程社團</a>
+<a href="https://www.flaticon.com/free-icon/notebook_2904859" target="_blank">Favicon</a>
+</pre></div>
+
+    </div>
+
+</body>
+</html>
