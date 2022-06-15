@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS筆記</title>
+    <link rel="stylesheet" href="../notes/bar.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.onl/jwWTwe">
+    <style>
+        .center-content{
+            background-color:#D1DDDB;
+            margin: 0px 325px;
+        }
+        .left-content{
+            float: left;
+            width: 300px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+        }
+        #p3 {
+            color: darkblue;
+        }
+        .box{
+            margin: auto;
+            padding: 7px;
+            background-color: #1d6a9679;
+            color: white;
+        }
+            p.dotted {border-style: dotted;}
+            p.dashed {border-style: dashed;}
+            p.solid {border-style: solid;}
+            p.double {border-style: double;}
+            p.groove {border-style: groove;}
+            p.ridge {border-style: ridge;}
+            p.inset {border-style: inset;}
+            p.outset {border-style: outset;}
+            p.none {border-style: none;}
+            p.hidden {border-style: hidden;}
+            p.mix {border-style: dotted dashed solid double;}
+            p.round3 {
+                border: 2px solid ;
+                border-radius: 12px;
+                padding: 5px;
+            }
+        .top-bar{
+            width: 100%;
+            height: 90px;
+        }
+        .center-content{
+            margin: 0px 325px;
+        }
+        .center {
+            text-align: center;
+        }
+        .left{
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .overline {
+            text-decoration-line: overline;
+        }
+        .line-through {
+            text-decoration-line: line-through;
+        }
+
+        .underline {
+            text-decoration-line: underline;
+        }
+
+        .overline-underline {
+            text-decoration-line: overline underline;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+        .spacing {
+           letter-spacing: 8px;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        a:active {
+            color: blue;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        
+    </style>
+</head>
+<body style="background-color: #D1DDDB;">
+    <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" checked>
+                <input type="radio" name="tab" id="comment" >
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他筆記:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/html1.html">HTML1</a></li>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/html2.html">HTML2</a></li>
+        </ul>
+        <hr>
+        <h1 style="color: rgb(255, 255, 255);">此筆記內容:</h1>
+        <ul>
+            <li><a href="#t1">語法</a></li>
+            <li><a href="#t2">註解</a></li>
+            <li><a href="#t3">ID</a></li>
+            <li><a href="#t4">Class</a></li>
+            <li><a href="#t5">星號</a></li>
+            <li><a href="#t6">背景圖片</a></li>
+            <li><a href="#t7">文字邊線</a></li>
+            <li><a href="#t8">文字對齊</a></li>
+            <li><a href="#t9">文字裝飾</a></li>
+            <li><a href="#t10">文字轉換</a></li>
+            <li><a href="#t11">文字間隙</a></li>
+            <li><a href="#t12">超連結顏色</a></li>
+            <li><a href="#t13">展示</a></li>
+            <li><a href="#t14">Box Model</a></li>
+        </ul>
+    </div>
+    <div class="center-content">
+    <h1 style="font-size:300%;text-align:center;">CSS筆記</h1>
+
+    <h1 id="t1">CSS 語法</h1>
+    <img src="https://img.onl/k8A6h" alt="github" width="350" height="70">
+    <xmp>語法：選擇器（標記）{屬性：值；屬性：值}。</xmp>
+    <hr>
+
+    <h1 id="t2">註解</h1>
+    <xmp>CSS的註解可以用/* */，最好不要使用//。</xmp>
+    <hr>
+
+    <h1 id="t3">ID</h1>
+    <xmp>加井字號（#）代表是ID，最好不要重複。ID可以指定某一個元素修改樣式。</xmp>
+    <pre>範例:<p id="p3">這是深藍色!</p></pre>
+    <xmp class="box">#p3 {
+    color: darkblue;
+}
+<p id="p3">這是深藍色!</p></xmp>
+    <hr>
+
+    <h1 id="t4">Class</h1>
+    <xmp>加點（.）代表是class可以指定很多元素修改樣式，class可以多個同時使用。</xmp>
+    <pre>範例:<p class="box">此筆記這個灰色的外框就是Class!</p></pre>
+    <xmp class="box">.box{
+    margin: auto;
+    background-color: darkgray;
+}
+<p class="box">此筆記這個的外框就是Class!</p></xmp>
+    <hr>
+
+    <h1 id="t5">星號</h1>
+    <xmp>使用星號（*）代表全部套用。</xmp>
+    <pre>範例:<p>將所有文字向左對齊。</p></pre>
+    <xmp class="box">*{
+    text-align: left;
+}</xmp>
+    <hr>
+
+    <h1 id="t6">背景圖片</h1>
+    <xmp>可以使用background-image來設定背景圖，
+background-repeat可以設定x軸或y軸重複圖片，
+background-attachment可以決定背景圖片是否固定，fixed不會跟著捲動。</xmp>
+    <xmp class="box">body {
+    background-image: url("圖片");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}</xmp>
+    <hr>
+
+    <h1 id="t7">文字邊線</h1>
+    <xmp>可以使用border-style來設定文字邊線，
+border-width決定線條寬度，
+border-radius決定邊角圓度。</xmp>
+    <pre>範例:</pre>
+    <p class="dotted">A dotted border.</p>
+    <xmp class="box">p.dotted {border-style: dotted;}</xmp><br>
+    <p class="dashed">A dashed border.</p>
+    <xmp class="box">p.dashed {border-style: dashed;}</xmp><br>
+    <p class="solid">A solid border.</p>
+    <xmp class="box">p.solid {border-style: solid;}</xmp><br>
+    <p class="double">A double border.</p>
+    <xmp class="box">p.double {border-style: double;}</xmp><br>
+    <p class="groove">A groove border.</p>
+    <xmp class="box">p.groove {border-style: groove;}</xmp><br>
+    <p class="ridge">A ridge border.</p>
+    <xmp class="box">p.ridge {border-style: ridge;}</xmp><br>
+    <p class="inset">An inset border.</p>
+    <xmp class="box">p.inset {border-style: inset;}</xmp><br>
+    <p class="outset">An outset border.</p>
+    <xmp class="box">p.outset {border-style: outset;}</xmp><br>
+    <p class="none">No border.</p>
+    <xmp class="box">p.none {border-style: none;}</xmp><br>
+    <p class="hidden">A hidden border.</p>
+    <xmp class="box">p.hidden {border-style: hidden;}</xmp><br>
+    <p class="mix">A mixed border.</p>
+    <xmp class="box">p.mix {border-style: dotted dashed solid double;}</xmp><br>
+    <p class="round3">Roundest border</p>
+    <xmp class="box">border-radius: 12px;</xmp><br>
+    <hr>
+
+    <h1 id="t8">文字對齊</h1>
+    <xmp>可以使用text-align來設定文字向哪邊對齊。</xmp>
+    <pre>範例:</pre>
+    <p class="left">向左邊對齊</p>
+    <p class="center">向中間對齊</p>
+    <p class="right">向右邊對齊</p>
+    <xmp class="box">.center {
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}</xmp>
+    <hr>
+
+    <h1 id="t9">文字裝飾</h1>
+    <xmp>可以使用text-decoration來設定文字的裝飾線。</xmp>
+    <pre>範例:</pre>
+    <p class="overline">這是上面的線</p>
+    <p class="line-through">這是刪除線</p>
+    <p class="underline">這是底線</p>
+    <p class="overline-underline">這是雙線</p>
+    <xmp class="box">.overline {
+    text-decoration-line: overline;
+}
+
+.line-through {
+    text-decoration-line: line-through;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.overline-underline {
+    text-decoration-line: overline underline;
+}</xmp>
+    <hr>
+
+    <h1 id="t10">文字轉換</h1>
+    <xmp>可以使用text-transform來轉換文字的大小寫。</xmp>
+    <pre>範例:</pre>
+    <p class="uppercase">This can converts the text to uppercase.</p>
+    <p class="lowercase">This can converts the text to lowercase.</p>
+    <p class="capitalize">This can converts the first text to uppercase.</p>
+    <xmp class="box">.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}</xmp>
+    <hr>
+
+    <h1 id="t11">文字間隙</h1>
+    <xmp>可以使用letter-spacing來轉換文字的大小寫。</xmp>
+    <pre>範例:</pre>
+    <p>這是正常的文字間隙</p>
+    <p class="spacing">這是8px的文字間隙</p>
+    <xmp class="box">.spacing {
+    letter-spacing: 8px;
+}</xmp>
+    <hr>
+
+    <h1 id="t12">超鏈結顏色</h1>
+    <xmp>超鏈接可以根據狀態來改變顏色。</xmp>
+    <pre>範例:<a href="https://www.google.com.tw/" target="_blank">google</a>
+
+還沒拜訪過時是link，拜訪過後是visited，滑鼠在上面是hover，active是正選是正選著。</pre>
+    <xmp class="box"> a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}</xmp>
+    <hr>
+   
+    <h1 id="t13">展示</h1>
+    <xmp>display屬性可以決定顯示塊狀(會換行)或同一行或不顯示。</xmp>
+    <pre>範例:display: none = 不顯示，
+    display: inline = 在同一行，
+    display: block = 塊狀(換行)。</pre>
+    <hr>
+      
+
+    <h1 id="t14">Box Model</h1>
+    <xmp>可以使用margin來設定線條外大小，
+border-width決定線條大小，
+padding設定線條裡的大小，
+也可以指定上下左右的寬度。</xmp>
+<pre>例如:margin: 25px 50px 75px 100px;
+          margin: (上) (左) (下) (右);
+    或    margin: 25px 50px;
+          margin: (上左) (下右);</pre>
+<img src="https://img.onl/xnJSfL" alt="github" width="400" height="340">
+    <hr></div>
+
+</body>
+</html>
