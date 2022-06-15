@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML筆記</title>
+    <link rel="stylesheet" href="../notes/bar.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://img.onl/jwWTwe">
     <style>
         .box{
@@ -16,18 +18,102 @@
         .normal {
             line-height: normal;
         }
+        .text-center{
+            text-align: center;
+        }
+        .top-bar{
+            width: 100%;
+            height: 90px;
+        }
+        .center-content{
+            margin: 0px 325px;
+        }
+        .left-content{
+            float: left;
+            width: 300px;
+            height: 550px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+            overflow-y: scroll;
+            overflow: auto;
+        }
     </style>
 </head>
 <body style="background-color:#FFFAF2;" >
+    <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" checked>
+                <input type="radio" name="tab" id="comment" >
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他筆記:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/html1.html">HTML1</a></li>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/notes/week2.html">CSS</a></li>
+        </ul>
+        <hr>
+        <h1 style="color: rgb(255, 255, 255);">此筆記內容:</h1>
+        <ul>
+            <li><a href="#t1">Responsive</a></li>
+            <li><a href="#t2">Computer Code</a></li>
+            <li><a href="#t3">特殊字元</a></li>
+            <li><a href="#t4">表單</a></li>
+            <li><a href="#t5">下拉表</a></li>
+            <li><a href="#t6">輸入下拉表</a></li>
+            <li><a href="#t7">文字框</a></li>
+            <li><a href="#t8">按鈕</a></li>
+            <li><a href="#t9">參考資料</a></li>
+        </ul>
+    </div>
+    <div class="center-content">
     <div class="normal">
-    <h1 style="font-size:300%;text-align:center;">HTML筆記</h1>
+    <h1 style="font-size:300%;text-align:center;">HTML2筆記</h1>
     
-    <h1>Responsive</h1>
+    <h1 id="t1">Responsive</h1>
     <xmp>可以根據裝置的螢幕寬度來改變樣式。</xmp>
     <xmp class="box"><meta name="viewport" content="width=device-width, initial-scale=1.0"></xmp></div>
     <hr>
 
-    <h1>Computer Code</h1>
+    <h1 id="t2">Computer Code</h1>
     <xmp>如果要寫一些程式的時候可以使用<code>標籤，但不保留換行因此可以加<pre>。</xmp>
 <pre>舉例:
     <code>
@@ -43,7 +129,7 @@
 </pre></xmp>
     <hr>
 
-    <h1>特殊字元</h1>
+    <h1 id="t3">特殊字元</h1>
     <xmp>有些符號會容易造成瀏覽器搞混，因此可以使用替代字符。</xmp>
     <xmp class="box">< = &lt;
 > = &gt;
@@ -51,7 +137,7 @@
 © = &copy;</xmp>
     <hr>
     
-    <h1>表單</h1>
+    <h1 id="t4">表單</h1>
     <xmp>使用<form>標籤創建表單，<input>用來輸入，type決定方式，
 <fieldset>在表單外生成框，<legend>為該表單名稱。</xmp>
     <ul>
@@ -150,7 +236,7 @@
 </form></xmp>
     <hr>
 
-    <h1>下拉表</h1>
+    <h1  id="t5">下拉表</h1>
     <xmp><select>可以建構一個下拉列表，<option>是一個選項，使用multiple可以多選。</xmp>
     <pre>舉例:</pre>
     <label for="animals">Choose a animal:</label>
@@ -167,7 +253,7 @@
 </select></xmp>
     <hr>
 
-    <h1>輸入下拉表</h1>
+    <h1 id="t6">輸入下拉表</h1>
     <xmp><datalist>既可以選取也可以輸入。</xmp>
     <pre>舉例:
 
@@ -195,7 +281,7 @@ Which country do you live in?</pre><form>
 </form></xmp>
     <hr>
 
-    <h1>文字框</h1>
+    <h1 id="t7">文字框</h1>
     <xmp><textarea>建構一個可以多行輸入的文字框，rows決定列，cols決定行。</xmp>
     <pre>舉例:</pre>
     <textarea name="message" rows="10" cols="30">
@@ -206,7 +292,7 @@ Which country do you live in?</pre><form>
 </textarea></xmp>
     <hr>
 
-    <h1>按鈕</h1>
+    <h1 id="t8">按鈕</h1>
     <xmp><button>建立一個可以點擊的按鈕。</xmp>
     <pre>舉例:</pre>
     <button onclick="alert('嗨你好!')">點擊!</button>
@@ -214,11 +300,11 @@ Which country do you live in?</pre><form>
     <xmp class="box"><button onclick="alert('嗨你好!')">點擊!</button></xmp>
     <hr>
 
-    <h2>參考資料:</h2>
+    <h2 id="t9">參考資料:</h2>
 <pre><a href="https://www.facebook.com/groups/ccccourse/" target="_blank">陳鍾誠的課程社團</a>
 <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3school(HTML)</a>
 <a href="https://www.flaticon.com/free-icon/notebook_2904859" target="_blank">Favicon</a>
 </pre>
-
+</div>
 </body>
 </html>
