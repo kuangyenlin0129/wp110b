@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="../../notes/bar.css">
+   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <style>
+  .left-content{
+            float: left;
+            width: 150px;
+            height: 550px;
+            background-color: #3c422846;
+            position: sticky;
+            top:0px;
+            border-radius: 15px;
+            overflow-y: scroll;
+            overflow: auto;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .top-bar{
+            width: 100%;
+            height: 90px;
+        }.center-content{
+            margin: 0px 30px;
+        }
 button {
   padding: 7px 14px;
   border: 1px black soild;
@@ -38,6 +60,55 @@ button {
 </style>
 </head>
 <body bgcolor="wheat">
+  <div class="top-bar">
+        <div class="wrapper">
+            <nav class="text-center">
+                <input type="radio" name="tab" id="home" >
+                <input type="radio" name="tab" id="comment" checked>
+                <input type="radio" name="tab" id="envelope" >
+                <input type="radio" name="tab" id="heart" >
+                <input type="radio" name="tab" id="user" >     
+                <label for="home" class="home">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </label>
+                <label for="comment" class="comment">
+                    <a href="#">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        Notes
+                    </a>
+                </label>
+                <label for="envelope" class="envelope">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Maill
+                    </a>
+                </label>
+                <label for="heart" class="heart">
+                    <a href="#">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        Portfolio
+                    </a>
+                </label>
+                <label for="user" class="user">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        User
+                    </a>
+                </label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="left-content">
+        <h1 style="color: rgb(255, 255, 255);">其他作品:</h1>
+        <ul>
+            <li><a href="https://kuangyenlin0129.github.io/wp110b/homework/html/form.html">Sign-Up</a></li>
+        </ul>
+    </div>
+<div class="center-content">
 
 <div style="text-align:center;">
 <button class="A">H</button>
@@ -47,6 +118,6 @@ button {
 <button class="E">O</button>
 <button class="F">!</button>
 </div>
-
+  </div>
 </body>
 </html>
