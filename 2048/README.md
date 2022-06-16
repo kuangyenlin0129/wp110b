@@ -76,5 +76,9 @@
 [IG](https://img.onl/dg3zNE)
 [Mail](https://img.onl/Kj3wgY)
 [Fb](https://img.onl/V6oBC5)
+[phone](https://soco-st.com/wp-content/uploads/2020/05/smartphone_hand_1022_paint-2.png)
+[phone2](https://upload.cc/i1/2022/06/15/JzjIBE.png)
+[cookies](https://upload.cc/i1/2022/06/15/JvulTk.png)
+[coolies2](https://upload.cc/i1/2022/06/15/01URHx.png)
 
 
