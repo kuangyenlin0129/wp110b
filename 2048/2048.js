@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
     const width = 4
     let score = 0
   
+    //create the playing board
     function createBoard() {
       for (let i=0; i < width*width; i++) {
         square = document.createElement('div')
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
     }
     createBoard()
   
+    //generate a new number
     function generate() {
       randomNumber = Math.floor(Math.random() * squares.length)
       if (squares[randomNumber].innerHTML == 0) {
@@ -137,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
       checkForWin()
     }
   
+    //assign functions to keyCodes
     function control(e) {
       if(e.keyCode === 37) {
         keyLeft()
@@ -178,10 +181,11 @@ document.addEventListener('DOMContentLoaded', () =>  {
       generate()
     }
   
+    //check for the number 2048 in the squares to win
     function checkForWin() {
       for (let i=0; i < squares.length; i++) {
         if (squares[i].innerHTML == 2048) {
-          resultDisplay.innerHTML = '你贏了!!!'
+          resultDisplay.innerHTML = 'You WIN'
           document.removeEventListener('keyup', control)
           setTimeout(() => clear(), 3000)
         }
@@ -197,17 +201,19 @@ document.addEventListener('DOMContentLoaded', () =>  {
         }
       }
       if (zeros === 0) {
-        resultDisplay.innerHTML = '你輸了!點擊下方按鈕重新開始'
+        resultDisplay.innerHTML = 'You LOSE'
         document.removeEventListener('keyup', control)
         setTimeout(() => clear(), 3000)
       }
     }
   
+    //clear timer
     function clear() {
       clearInterval(myTimer)
     }
   
   
+    //add colours
     function addColours() {
       for (let i=0; i < squares.length; i++) {
         if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#afa192'
