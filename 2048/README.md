@@ -3,9 +3,6 @@
 <br>
 以及修改自 https://www.bilibili.com/video/BV1YS4y1N72e?share_source=copy_web 的導航欄
 
-# 創作動機
-想把我的網頁都串連起來，這樣既方便也實用
-
 # 功能
 ### 導航欄
 <img src="https://upload.cc/i1/2022/06/17/Iq2GUu.png" width=70%>
