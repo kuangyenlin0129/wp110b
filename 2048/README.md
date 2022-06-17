@@ -78,4 +78,7 @@
 [cookies](https://upload.cc/i1/2022/06/15/JvulTk.png)
 [coolies2](https://upload.cc/i1/2022/06/15/01URHx.png)
 
+# 已知問題
+* 使用Chrome瀏覽器會跑出安全性問題
+
 
