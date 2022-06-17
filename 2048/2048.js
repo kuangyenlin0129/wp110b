@@ -228,4 +228,4 @@ document.addEventListener('DOMContentLoaded', () =>  {
   
   var myTimer = setInterval(addColours, 50)
   
-  }
+  })
