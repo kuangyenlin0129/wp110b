@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>林光彥的個人網站</title>
         <link rel="icon" type="image/x-icon" href="https://cdn-icons.flaticon.com/png/512/2888/premium/2888701.png?token=exp=1655018752~hmac=36ac8232af6d68a1908245240b6e7b0e">
-        <link rel="stylesheet" href="../lab3/bar.css">
+        <link rel="stylesheet" href="../notes/bar.css">
         <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
             .left-content{
@@ -82,7 +81,7 @@
         <div class="top-bar">
         <div class="wrapper">
             <nav class="text-center">
-                <input type="radio" name="tab" id="home" >
+                <input type="radio" name="tab" id="home" onclick="location.href='https://kuangyenlin0129.github.io/wp110b/2048/2048.html'">
                 <input type="radio" name="tab" id="comment" onclick="location.href='https://kuangyenlin0129.github.io/wp110b/notes/html1.html'">
                 <input type="radio" name="tab" id="envelope" onclick="location.href='mailto:s111010503@student.nqu.edu.tw'">
                 <input type="radio" name="tab" id="heart" onclick="location.href='https://kuangyenlin0129.github.io/wp110b/homework/html/form.html'">
@@ -102,7 +101,7 @@
                 <label for="envelope" class="envelope">
                     <a href="#">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        Maill
+                        Mail
                     </a>
                 </label>
                 <label for="heart" class="heart">
@@ -114,7 +113,7 @@
                 <label for="user" class="user">
                     <a href="#">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        User
+                        Me
                     </a>
                 </label>
                 <div class="tab"></div>
@@ -130,7 +129,7 @@
             <h2>個人資料</h2>
             <p>生日:2003年1月29日<br>星座:水瓶座</p>
             <h2>經歷</h2>
-            <p>正義國小⇨明志國中⇨新北高中⇨金門大學</p>
+            <p>正義國小⇨明志國中⇨新北高中⇨輔仁大學</p>
             <h2>興趣</h2>
             <ul class="interest">
                 <li>看劇</li>
